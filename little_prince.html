@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- This is the start of html doc. Sets language to English-->
+ <!-- After this I will set the browser to show standard characters-->
+
+ <html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <!--Setting the page to properly show on different devices-->
+        <meta name = "viewport"  content="width=device-width, initial-scale=1.0">
+        
+        <!--Title of the book-->
+        <title> The Little Prince </title>
+        <!--Beginning of the CSS style-->
+        <!--These behave similar to classes and allows me to use these character effects on multiple pieces of text-->
+        <style>
+            .littleprince_text{
+                width: 380px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1;
+
+                margin: 20px auto;
+            }
+            .littleprince_img{
+
+                display: block;
+                width: 100%;
+
+            }
+            .passage{
+                margin-top: 0;
+            }
+        
+            .underlined_part{ 
+                text-decoration: underline;
+            }
+            .highlighted_part{
+                background-color: orange;
+            }
+            .red_part{
+                color: red;
+            }
+            .linkto_index{
+                display: block;
+                margin-top: 20px;
+                font-weight: normal;
+            }
+        </style>
+        <!--End the CSS style-->
+    </head>
+
+    <body>
+        <!--Start of the wrtitten content-->
+        <!--The following will keep the image and text in the same location-->
+        <div class="littleprince_text">
+            <img
+            class="littleprince_img"
+            src="img/little_prince.png"
+            alt="If you are seeing this, something went wrong"
+            >
+            <p class="passage">
+                <!--Start of the little prince text under the cover-->
+                As the little prince dropped off to sleep, I too him in my arms and set out walking once more.
+                <!--underlined portion-->
+                <span class="underlined_part">
+                    I felt deeply moved, and stirred. It seemed to me that I was carrying a very fragile treasure.
+                </span>
+                <!--Highlighted Part-->
+                <span class="highlighted_part">
+                    It seemed to me, even, that there was nothing more fragile on all Earth.
+                </span>
+                In the moonlight I looked at his pale forehead, his closed eyes, his locks of hair that trembled in the wind, and i said to myself:
+                <!--There are 2 red parts, this is the first part-->
+                <span class="red_part">
+                    "What I see here is nothing but a shell. What is most important is invisible..."
+                </span>
+                As his lips opened slightly with the suspicion of a half-smile, I said to myself, again:
+                <!--This is the second red part-->
+                <span class="red_part">
+                    "What moves me so deeply, about this little prince who is sleeping here, is his loyalty to a flower--the image of a rose that shines through his whole being like the flame of a lamp, even when is is asleep..."
+                </span>
+                And I felt him to be more fragile still.
+                <span class="underlined_part">
+                    I felt the need of protecting him, as if he gimself were a flame that might be extenguished by a little puff of wind ...
+                </span>
+            </p>
+        <!--End of the text-->
+        <a class="linkto_index" href="index.html">
+            Get back to the All About Ronnie
+        </a>
+        </div>
+    </body>
+ </html>
