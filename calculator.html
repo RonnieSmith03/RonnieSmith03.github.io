@@ -1,0 +1,60 @@
+<!--Selecting the document type and language you want to be displayed-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--The head enclosed with the '<>' signs indicate where the heads or subheading of the page will go-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator By Ronnie Smith</title>
+
+    <!--Using CSS to design the page-->
+    <!--Going for a Blue and Gold color scheme with TNR font-->
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 60px;
+        }
+        table{
+            border-collapse: collapse;
+            margin: 40px 0;
+            min-width:  400px;
+        }
+        th,
+        td {
+            border: 3px solid black;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        th{
+            background-color: blue;
+            color: white;
+        }
+        td{
+            background-color: gold;
+        }
+        .return_link{
+            display: block;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<!--Heading for the calculator-->
+<h1>JS calculator</h1>
+<!--Here I am giving instructions to the use on how to use the calculator-->
+<p>
+    Please enter two number, then select an operator
+</p>
+<!--Here I am loading in the JS file-->
+<script src="calculator.js"></script>
+
+<!--Lastly, returning to the All About Ronnie Page-->
+<a class="return_link" href="index.html">
+    Link to All About Ronnie
+</a>
+</body>
+</html>
